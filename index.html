@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader-body"></div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="row">
+                <div class="col-4">
+                    <h1>空氣品質指標 (AQI)</h1>
+                    <select class="area" name="area" id="area">
+                        <option value="" >請選擇地區</option>
+                    </select>
+                </div>
+                <div class="col-8">
+                    <table>
+                        <tr>
+                            <th style="background-color: #95F084;">0~50</th>
+                            <th style="background-color: #FFE695;">51~100</th>
+                            <th style="background-color: #FFAF6A;">101~150</th>
+                            <th style="background-color: #FF5757;">151~200</th>
+                            <th style="background-color: #9777FF;">201~300</th>
+                            <th style="background-color: #AD1774;">301~400</th>
+                        </tr>
+                        <tr>
+                            <td>良好</td>
+                            <td>普通</td>
+                            <td>對敏感族群不健康</td>
+                            <td>對所有族群不健康</td>
+                            <td>非常不健康</td>
+                            <td>危害</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="row">
+                <div class="col-12">
+                    <div class="time"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="left">
+                        <div class="left-header">
+                            <span class="region"></span><span class="index"></span>
+                        </div>
+                        <div class="left-body">
+                            <ul class="airQuality"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+           <blockquote>資料來源:行政院環境保護署</blockquote>
+        </div>
+    </div>
+
+    <script src="js/all.js"></script>
+</body>
+
+</html>
